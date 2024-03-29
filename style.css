@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 10s infinite;
+    background-color: currentColor;*/
+    background-color: #222;
+    color: #000000;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-family:'Times New Roman', Times, serif;
+    width: auto;
+    height: fit-content;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background: linear-gradient(45deg, white 10%, black 90%);
+    background-clip: text;
+    /* Apply background-clip to text */
+    -webkit-background-clip: text;
+    /* For Safari compatibility */
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 10s infinite;
+    margin: 100px auto 0px;
+}
+
+@keyframes wheelHueColor {
+
+    from,
+    to {
+        color: hsl(324, 70%, 45%);
+    }
+
+    10% {
+        color: hsl(360, 65%, 45%);
+    }
+
+    20% {
+        color: hsl(36, 80%, 45%);
+    }
+
+    30% {
+        color: hsl(72, 75%, 35%);
+    }
+
+    40% {
+        color: hsl(108, 65%, 35%);
+    }
+
+    50% {
+        color: hsl(144, 75%, 35%);
+    }
+
+    60% {
+        color: hsl(180, 75%, 35%);
+    }
+
+    70% {
+        color: hsl(216, 60%, 45%);
+    }
+
+    80% {
+        color: hsl(252, 65%, 50%);
+    }
+
+    90% {
+        color: hsl(288, 60%, 40%);
+    }
+}
+
+.template {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+    color: rgb(255, 255, 255);
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search input {
+    border: 0%;
+    outline: 0;
+    background-color: whitesmoke;
+    font-size: 18px;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 16px;
+}
+
+.search button {
+    outline: 0;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: bold 1px #000000;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+
+.weather weather-details {
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: auto;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+    height: fit-content;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -7px;
+}
