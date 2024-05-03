@@ -21,7 +21,7 @@ body {
     width: auto;
     height: fit-content;
     text-align: center;
-    font-size: 50px;
+    font-size: 5vw;
     margin-bottom: 20px;
     justify-content: space-around;
     background: linear-gradient(45deg, white 10%, black 90%);
@@ -120,7 +120,7 @@ body {
 }
 
 .search button img {
-    width: 16px;
+    width: 10vw;
 }
 
 .weather-icon {
@@ -162,7 +162,7 @@ body {
 }
 
 .col img {
-    width: 40px;
+    width: 10.0999vw;
     margin-right: 10px;
     height: fit-content;
 }
