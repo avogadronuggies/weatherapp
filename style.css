@@ -111,16 +111,18 @@ body {
 
 .search button {
     outline: 0;
-    background-color: whitesmoke;
+    background-color:white;
     border-radius: 50%;
     width: 60px;
-    height: 60px;
+    height: 60px; 
     cursor: pointer;
     border: bold 1px #000000;
 }
 
 .search button img {
     width: 10vw;
+    background-blend-mode: color-burn;
+    border-radius: 50%;
 }
 
 .weather-icon {
