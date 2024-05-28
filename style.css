@@ -5,9 +5,6 @@
 }
 
 body {
-    /* color: hsl(324, 70%, 45%);
-    animation: wheelHueColor 10s infinite;
-    background-color: currentColor;*/
     background-color: #222;
     color: #000000;
     background-size: cover;
@@ -26,9 +23,7 @@ body {
     justify-content: space-around;
     background: linear-gradient(45deg, white 10%, black 90%);
     background-clip: text;
-    /* Apply background-clip to text */
     -webkit-background-clip: text;
-    /* For Safari compatibility */
     color: hsl(324, 70%, 45%);
     animation: wheelHueColor 10s infinite;
     margin: 100px auto 0px;
@@ -96,7 +91,6 @@ body {
     justify-content: space-between;
 }
 
-
 .search input {
     border: 0%;
     outline: 0;
@@ -135,7 +129,6 @@ body {
     font-weight: 500;
 }
 
-
 .weather weather-details {
     font-size: 40px;
     font-weight: 300;
@@ -154,7 +147,6 @@ body {
     align-items: center;
     padding: 0 20px;
     margin-top: 50px;
-
 }
 
 .col {
@@ -163,14 +155,90 @@ body {
     text-align: left;
 }
 
-.col img {
-    width: 10.0999vw;
-    margin-right: 10px;
-    height: fit-content;
-}
+
 
 .humidity,
 .wind {
     font-size: 28px;
     margin-top: -7px;
+}
+
+/* Media query for screens larger than 767px */
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.5vw;
+        /* Adjust font size for larger screens */
+    }
+
+    .template {
+        width: 470px;
+        /* Adjust width for larger screens */
+    }
+
+    .search {
+        width: 100%;
+
+        /* Adjust width for larger screens */
+    }
+
+    .search input {
+        width: 70%;
+        /* Adjust input width for larger screens */
+    }
+
+    .search button {
+        width: 60px;
+        height: 60px;
+        /* Adjust button width for larger screens */
+    }
+
+    .weather h1 {
+        font-size: 30px;
+        /* Adjust font size for larger screens */
+    }
+
+    .weather h2 {
+        font-size: 46px;
+        /* Adjust font size for larger screens */
+    }
+
+    .search button img {
+        width: 40px;
+        background-blend-mode: color-burn;
+        border-radius: 50%;
+    }
+
+    .col img {
+        width: 30px;
+        /* Adjust image size for larger screens */
+    }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .title {
+        font-size: 5vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    .template {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
+
+    .weather h1 {
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .weather h2 {
+        font-size: 17vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    .col img {
+        width: 10.0999vw;
+        margin-right: 10px;
+        height: fit-content;
+    }
 }
